@@ -1,0 +1,63 @@
+{
+    "blog": [
+        {
+            "title": "Configure And Setup Clion With ESP-IDF",
+            "color": "rgb(249, 168, 212)",
+            "content": "",
+            "background": "",
+            "date": ""
+        },
+        {
+            "title": "Cara Menginstall Golang",
+            "color": "rgb(147, 197, 253)",
+            "content": "",
+            "background": "",
+            "date": ""
+        },
+        {
+            "title": "File Permission Pada Linux",
+            "color": "rgb(250, 204, 21)",
+            "content": "",
+            "background": "",
+            "date": ""
+        },
+        {
+            "title": "Distribusi, Repository, dan Arsitektur pada linux",
+            "color": "rgb(209, 213, 219)",
+            "content": "",
+            "background": "",
+            "date": ""
+        }
+    ],
+    "projects": [
+        {
+            "name": "Tikades - Aplikasi Pengolahan Data Desa",
+            "content": "https://fn-code.github.io/portofolio/projects/tikades.md"
+        },
+        {
+            "name": "Tikadesbox - IoT Streaming audio Dan Laporan Darurat",
+            "content": "https://fn-code.github.io/portofolio/projects/tikadesbox.md"
+        },
+        {
+            "name": "Hallo Patali - Aplikasi Penjualan untuk UMKM Atau Bumdes",
+            "content": "https://fn-code.github.io/portofolio/projects/hallopatali-bumdes-umkm.md"
+        },
+        {
+            "name": "Acaraku - Aplikasi Registrasi Atau Pembuatan Acara",
+            "content": "https://fn-code.github.io/portofolio/projects/acaraku.md"
+        },
+        {
+            "name": "Lamahu Command Center - Aplikasi Pemantauan Laporan Dan Monitoring Perangkat IoT",
+            "content": "https://fn-code.github.io/portofolio/projects/lamahu-command-center.md"
+        },
+        {
+            "name": "Protoype Aplikasi Monitoring Sensor Data Nelayan Digital menggunakan teknologi NB-Iot",
+            "content": "https://fn-code.github.io/portofolio/projects/nelayan-digital.md"
+        },
+        {
+            "name": "Aplikasi Pengarsipan Dokumen Di Instansi Pemerintahan",
+            "content": "https://fn-code.github.io/portofolio/projects/pengarsipan.md"
+        }
+       
+    ]
+}
