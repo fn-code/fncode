@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d0e9c47c-6771-489d-8f94-8bf4792589d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
+=======
+    <list default="true" id="d0e9c47c-6771-489d-8f94-8bf4792589d2" name="Changes" comment="" />
+>>>>>>> 5a2a065 (modify index.html, fetch blogs data from github)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +45,11 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "/Users/ludinnento",
+=======
+    "last_opened_file_path": "/Users/ludinnento/funproject/go/src/github.com/fn-code/portofolio/portfolio",
+>>>>>>> 5a2a065 (modify index.html, fetch blogs data from github)
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
