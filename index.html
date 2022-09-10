@@ -95,7 +95,6 @@
             </div>
 
 
-
         </div>
     </div>
 
@@ -121,8 +120,6 @@
                     </ul>
                 </div>
             </div>
-
-
 
 
             <div class="mt-4 bg-white shadow-md flex flex-col items-center lg:hidden xl:hidden">
@@ -157,6 +154,7 @@
                         <p>ludyyn@gmail.com</p>
                     </div>
                 </div>
+
 
 
 
@@ -213,109 +211,8 @@
 
 
 
-
-
             <div class="w-full font-semibold text-lg">Blogs</div>
-            <div class="grid grid-cols-12 gap-2 gap-y-4 max-w-6xl">
-
-
-                <!-- Video 3 -->
-                <div class="col-span-12 sm:col-span-6 md:col-span-3">
-                    <card class="w-full flex flex-col">
-                        <div class="relative h-32" style="background: rgb(250, 204, 21)">
-                        </div>
-
-                        <div class="flex flex-row gap-2">
-
-
-                            <!-- Description -->
-                            <div class="flex flex-col bg-white w-full px-2 py-1">
-                                <a href="#">
-                                    <p class="text-gray-900 text-sm font-semibold">Learn CSS Box Model in 8 Minutes</p>
-                                </a>
-                                <a class="text-gray-700 text-xs mt-2" href="#"> Web Dev Simplified </a>
-                                <p class="text-gray-700 text-xs mt-1">241K views . 3 years ago</p>
-                            </div>
-
-                        </div>
-                    </card>
-                </div>
-
-
-                <!-- Video 3 -->
-
-                <div class="col-span-12 sm:col-span-6 md:col-span-3">
-                    <card class="w-full flex flex-col">
-                        <div class="relative h-32" style="background: rgb(147, 197, 253)">
-                        </div>
-
-                        <div class="flex flex-row gap-2">
-
-
-                            <!-- Description -->
-                            <div class="flex flex-col bg-white w-full px-2 py-1">
-                                <a href="#">
-                                    <p class="text-gray-900 text-sm font-semibold">Learn CSS Box Model in 8 Minutes</p>
-                                </a>
-                                <a class="text-gray-700 text-xs mt-2" href="#"> Web Dev Simplified </a>
-                                <p class="text-gray-700 text-xs mt-1">241K views . 3 years ago</p>
-                            </div>
-
-                        </div>
-                    </card>
-                </div>
-
-                <!-- Video 3 -->
-                <div class="col-span-12 sm:col-span-6 md:col-span-3">
-                    <card class="w-full flex flex-col">
-                        <div class="relative h-32" style="background: rgb(249, 168, 212)">
-                        </div>
-
-                        <div class="flex flex-row gap-2">
-
-
-                            <!-- Description -->
-                            <div class="flex flex-col bg-white w-full px-2 py-1">
-                                <a href="#">
-                                    <p class="text-gray-900 text-sm font-semibold">Learn CSS Box Model in 8 Minutes</p>
-                                </a>
-                                <a class="text-gray-700 text-xs mt-2" href="#"> Web Dev Simplified </a>
-                                <p class="text-gray-700 text-xs mt-1">241K views . 3 years ago</p>
-                            </div>
-
-                        </div>
-                    </card>
-                </div>
-
-                <!-- Video 4 -->
-                <div class="col-span-12 sm:col-span-6 md:col-span-3">
-                    <card class="w-full flex flex-col">
-                        <div class="h-32 w-full flex align-center items-center justify-center"
-                             style="background: rgb(209, 213, 219)">
-                            <!-- Image Video -->
-                            <a href="#" class="items-center">
-                                <img src="https://picsum.photos/seed/90/300/200" class="w-96 h-32 items-center"/>
-                            </a>
-                        </div>
-
-                        <div class="flex flex-row gap-2">
-
-
-                            <!-- Description -->
-                            <div class="flex flex-col bg-white w-full px-2 py-1">
-                                <a href="#">
-                                    <p class="text-gray-900 text-sm font-semibold">Learn CSS Box Model in 8 Minutes</p>
-                                </a>
-                                <a class="text-gray-700 text-xs mt-2" href="#"> Web Dev Simplified </a>
-                                <p class="text-gray-700 text-xs mt-1">241K views . 3 years ago</p>
-                            </div>
-
-                        </div>
-                    </card>
-                </div>
-
-
-
+            <div class="grid grid-cols-12 gap-2 gap-y-4 max-w-6xl blog-container">
 
 
             </div>
@@ -330,5 +227,87 @@
 </div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/showdown@2.0/dist/showdown.min.js"></script>
+<script>
+    let converter = new showdown.Converter();
+
+    async function getAppConfig() {
+        let url = 'https://fn-code.github.io/fncode/app.json';
+        try {
+            let res = await fetch(url);
+            return await res.json();
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    async function getMarkdown(url) {
+        try {
+            let res = await fetch(url);
+            return await res.text();
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+
+    async function renderProjects() {
+        let container = document.querySelector('.blog-container');
+        let app = await getAppConfig();
+
+
+        app.blog.forEach(async (pr, i) => {
+
+            let htmlSegment = "";
+
+            if (pr.background === "") {
+
+
+                htmlSegment = `<div class="col-span-12 sm:col-span-6 md:col-span-3">
+                    <card class="w-full flex flex-col">
+                        <div class="relative h-32" style="background: ${pr.color}">
+
+                        </div>
+
+                        <div class="flex flex-row gap-2">
+                            <!-- Description -->
+                            <div class="flex flex-col bg-white w-full px-2 py-1">
+                                <a href="#">
+                                    <p class="text-gray-900 text-sm font-semibold">${pr.title}</p>
+                                </a>
+                                <a class="text-gray-700 text-xs mt-2" href="#"> ${pr.date}</a>
+                            </div>
+                        </div>
+                    </card>
+                </div>`;
+            } else {
+                htmlSegment = `<div class="col-span-12 sm:col-span-6 md:col-span-3">
+                    <card class="w-full flex flex-col">
+                        <div class="relative h-32" style="background: ${pr.color}">
+                        <a href="#" class="items-center">
+                                <img src="${pr.background}" class="w-96 h-32 items-center"/>
+                            </a>
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <!-- Description -->
+                            <div class="flex flex-col bg-white w-full px-2 py-1">
+                                <a href="#">
+                                    <p class="text-gray-900 text-sm font-semibold">${pr.title}</p>
+                                </a>
+                                <a class="text-gray-700 text-xs mt-2" href="#"> ${pr.date}</a>
+                            </div>
+
+                        </div>
+                    </card>
+
+
+                </div>`;
+            }
+
+            container.insertAdjacentHTML("beforeend", htmlSegment);
+        });
+    }
+    renderProjects();
+</script>
 </body>
 </html>
