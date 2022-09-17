@@ -110,10 +110,14 @@
                     <ul class="flex items-center gap-5 text-sm">
                         <li>
                             <a class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
+                               href="/">Home</a></li>
+                        <li>
+                        <li>
+                            <a class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
                                href="">Blog</a></li>
                         <li>
                             <a class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
-                               href="">Project</a></li>
+                               href="/projects">Project</a></li>
                         <li>
                             <a class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
                                href="">About</a></li>
@@ -232,7 +236,7 @@
     let converter = new showdown.Converter();
 
     async function getAppConfig() {
-        let url = 'https://fn-code.github.io/fncode/app.json';
+        let url = 'https://ludindev.tech/app.json';
         try {
             let res = await fetch(url);
             return await res.json();
