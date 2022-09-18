@@ -164,7 +164,7 @@
     let converter = new showdown.Converter();
     let baseURL = (window.location).href;
     let strs = baseURL.split('/');
-    let id = strs.at(-1)
+    let id = strs.at(-2)
     console.log(id)
     async function getAppConfig() {
         let url = 'https://ludindev.tech/app.json';
