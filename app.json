@@ -5,7 +5,7 @@
       "dir": "configure-and-setup-clion-with-esp-idf",
       "color": "rgb(249, 168, 212)",
       "content": "",
-      "background": "",
+      "background": "https://ludindev.tech/blog/configure-and-setup-clion-with-esp-idf/img/01.jpg",
       "date": "Oct 11, 2019"
     },
     {
@@ -13,7 +13,7 @@
       "dir": "cara-menginstall-golang",
       "color": "rgb(147, 197, 253)",
       "content": "",
-      "background": "",
+      "background": "https://ludindev.tech/blog/cara-menginstall-golang/img/01.jpg",
       "date": "Apr 11, 2019"
     },
     {
@@ -29,7 +29,7 @@
       "dir": "distribusi-repository-dan-arsitektur-pada-linux",
       "color": "rgb(209, 213, 219)",
       "content": "",
-      "background": "",
+      "background": "https://ludindev.tech/blog/distribusi-repository-dan-arsitektur-pada-linux/img/01.jpg",
       "date": "May 3, 2019"
     }
   ],
