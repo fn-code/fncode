@@ -1,0 +1,7 @@
+{
+  "title": "File Permission Pada Linux",
+  "color": "rgb(250, 204, 21)",
+  "content": "Kali ini saya akan membahas tentang file permission . Sebelum kita membahas tentang file permission kita harus tahu dulu apa itu file permission.\nFile permission adalah hak akses bagi user untuk membaca,menulis dan mengeksekusi sebuah file.\nDi linux mempunyai 3 hak akses berbeda pada sebuah file, yaitu user (pemilik file) , group dan other",
+  "background": "https://ludindev.tech/blog/file-permission-pada-linux/img/01.jpeg",
+  "date": "May 3, 2019"
+}

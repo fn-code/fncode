@@ -68,11 +68,11 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                               d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                     </svg>
-                    <p class="text-sm text-gray-700"><i>Oct 2018 – Jun 2022</i></p>
+                    <p class="text-sm text-gray-700"><i id="page-date"></i></p>
                 </div>
-                <div class="w-full font-semibold text-xl">Distribusi Linux Untuk Pengolahan data masyarakat</div>
+                <div class="w-full font-semibold text-xl" id="page-title"></div>
 
-                <div id="blog-content" class="pb-64 py-6 text-gray-800 text-md space-y-4">
+                <div id="blog-content" class="pb-32 py-6 text-gray-800 text-md space-y-4">
                 </div>
             </div>
 
@@ -162,10 +162,11 @@
     let strs = baseURL.split('/');
     let id = strs.at(-2)
 
-    async function getAppConfig() {
-        let url = 'https://ludindev.tech/app.json';
+
+    async function getPageConfig(configURL) {
+
         try {
-            let res = await fetch(url);
+            let res = await fetch(configURL);
             return await res.json();
         } catch (error) {
             console.log(error);
@@ -183,6 +184,16 @@
 
 
     async function renderProjects() {
+        let url = `https://ludindev.tech/blog/${id}/${id}.json`;
+        let pageConfig = await getPageConfig(url);
+        
+        let pageDate = document.getElementById("page-date");
+        let pageTitle = document.getElementById("page-title");
+
+        pageDate.textContent = pageConfig.date;
+        pageTitle.textContent = pageConfig.title
+        document.title = pageConfig.title;
+
 
         let res = await getMarkdown(`https://ludindev.tech/blog/${id}/${id}.md`);
         let mrkdown = converter.makeHtml(res);
