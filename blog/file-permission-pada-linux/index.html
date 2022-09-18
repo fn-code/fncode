@@ -188,6 +188,7 @@
 
     async function renderProjects() {
 
+        console.log("ludin nnento")
         let res = await getMarkdown(`https://ludindev.tech/blog/${id}/${id}.md`);
         let mrkdown = converter.makeHtml(res);
 
