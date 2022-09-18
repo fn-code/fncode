@@ -1,3 +1,4 @@
+![File Permission](http://ludindev.tech/blog/file-permission-pada-linux/img/01.jpeg)
 Kali ini saya akan membahas tentang file permission . Sebelum kita membahas tentang file permission kita harus tahu dulu apa itu file permission.
 
 File permission adalah hak akses bagi user untuk membaca,menulis dan mengeksekusi sebuah file.
