@@ -1,11 +1,11 @@
 {
-  
+
   "blog": [
     {
       "title": "Configure And Setup Clion With ESP-IDF",
       "dir": "configure-and-setup-clion-with-esp-idf",
       "color": "rgb(249, 168, 212)",
-      "content": "",
+      "content": "The following is an explanation of how to setup and configure Clion IDE with esp-idf",
       "background": "https://ludindev.tech/blog/configure-and-setup-clion-with-esp-idf/img/01.jpg",
       "date": "Oct 11, 2019"
     },
@@ -13,7 +13,7 @@
       "title": "Cara Menginstall Golang",
       "dir": "cara-menginstall-golang",
       "color": "rgb(147, 197, 253)",
-      "content": "",
+      "content": "Sebelum mengintall golang saya akan menjelaskan apa itu golang terlibih dahulu. Golang adalah sebuah bahasa pemograman yang dikembangkan di Google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan di publik tahun 2009.",
       "background": "https://ludindev.tech/blog/cara-menginstall-golang/img/01.jpg",
       "date": "Apr 11, 2019"
     },
@@ -21,7 +21,7 @@
       "title": "File Permission Pada Linux",
       "dir": "file-permission-pada-linux",
       "color": "rgb(250, 204, 21)",
-      "content": "",
+      "content": "Kali ini saya akan membahas tentang file permission . Sebelum kita membahas tentang file permission kita harus tahu dulu apa itu file permission.\nFile permission adalah hak akses bagi user untuk membaca,menulis dan mengeksekusi sebuah file.\nDi linux mempunyai 3 hak akses berbeda pada sebuah file, yaitu user (pemilik file) , group dan other",
       "background": "https://ludindev.tech/blog/file-permission-pada-linux/img/01.jpeg",
       "date": "May 3, 2019"
     },
@@ -29,7 +29,7 @@
       "title": "Distribusi, Repository, dan Arsitektur pada linux",
       "dir": "distribusi-repository-dan-arsitektur-pada-linux",
       "color": "rgb(209, 213, 219)",
-      "content": "",
+      "content": "Kali ini saya akan membahas mengenai distribusi,repository,arsitektur pada linux. Pertama yang kita bahas yaitu repository",
       "background": "https://ludindev.tech/blog/distribusi-repository-dan-arsitektur-pada-linux/img/01.jpg",
       "date": "May 3, 2019"
     }
