@@ -2,6 +2,7 @@
   "blog": [
     {
       "title": "Configure And Setup Clion With ESP-IDF",
+      "dir": "configure-and-setup-clion-with-esp-idf",
       "color": "rgb(249, 168, 212)",
       "content": "",
       "background": "",
@@ -9,6 +10,7 @@
     },
     {
       "title": "Cara Menginstall Golang",
+      "dir": "cara-menginstall-golang",
       "color": "rgb(147, 197, 253)",
       "content": "",
       "background": "",
@@ -16,6 +18,7 @@
     },
     {
       "title": "File Permission Pada Linux",
+      "dir": "file-permission-pada-linux",
       "color": "rgb(250, 204, 21)",
       "content": "",
       "background": "",
@@ -23,6 +26,7 @@
     },
     {
       "title": "Distribusi, Repository, dan Arsitektur pada linux",
+      "dir": "distribusi-repository-dan-arsitektur-pada-linux",
       "color": "rgb(209, 213, 219)",
       "content": "",
       "background": "https://picsum.photos/seed/90/300/200",
