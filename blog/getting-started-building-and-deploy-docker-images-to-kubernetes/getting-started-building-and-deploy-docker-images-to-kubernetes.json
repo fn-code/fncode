@@ -1,0 +1,8 @@
+{
+  "title": "Getting Started: Building and Deploy docker images to Kubernetes",
+  "dir": "getting-started-building-and-deploy-docker-images-to-kubernetes",
+  "color": "rgb(249, 168, 212)",
+  "content": "In this tutorial, we are gonna build and deploy docker images to Kubernetes from scratch. Docker is an open platform for developing, shipping, and running applications. Kubernetes, also known as K8s, is an open-source system for automating the deployment, scaling, and management of containerized applications.",
+  "background": "https://ludindev.tech/blog/getting-started-building-and-deploy-docker-images-to-kubernetes/img/01.JPG",
+  "date": "Sep 18, 2022"
+}
