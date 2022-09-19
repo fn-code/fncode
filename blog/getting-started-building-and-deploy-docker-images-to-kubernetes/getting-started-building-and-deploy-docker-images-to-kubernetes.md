@@ -162,27 +162,28 @@ After that, you can check your docker hub if the image that you push or upload i
 
 3. **Deploy Image To Kubernetes**
 <br>
-   To deploy the application to Kubernetes, first, make sure you already install Kubernetes on your computer or you can use Kubernetes on cloud services, like Google Cloud Platform, Amazon Web Service, and Azure. And don’t forget to install kubectl, for communicating/controlling the Kubernetes cluster. 
 
-    The first command that we want to run is the kubectl version, this command is used to check the Kubernetes version.
+To deploy the application to Kubernetes, first, make sure you already install Kubernetes on your computer or you can use Kubernetes on cloud services, like Google Cloud Platform, Amazon Web Service, and Azure. And don’t forget to install kubectl, for communicating/controlling the Kubernetes cluster. 
 
-    ```shell 
-    kubectl version
-   ```
+The first command that we want to run is the kubectl version, this command is used to check the Kubernetes version.
 
-   After that run kubectl get nodes, the command to check Kubernetes cluster node.
+```shell 
+kubectl version
+```
 
-    ```shell
-    kubectl get nodes
-   ```
+After that run kubectl get nodes, the command to check Kubernetes cluster node.
 
-   In this step, we are gonna deploy Kubernetes with minimal configuration, and we create Kubernetes deployment.yaml, and service.yaml. 
+```shell
+kubectl get nodes
+```
 
-   Kubernetes Deployment is the process of providing declarative updates to Pods and ReplicaSets. It allows us to declare the desired state in the manifest file or YAML file. ([Kubernetes](https://kubernetes.io))
+In this step, we are gonna deploy Kubernetes with minimal configuration, and we create Kubernetes deployment.yaml, and service.yaml. 
 
-   Kubernetes Service is Service is an abstraction that defines a logical set of Pods and a policy by which to access them (sometimes this pattern is called a micro-service). The set of Pods targeted by a Service is usually determined by a selector. ([Kubernetes](https://kubernetes.io))
+Kubernetes Deployment is the process of providing declarative updates to Pods and ReplicaSets. It allows us to declare the desired state in the manifest file or YAML file. ([Kubernetes](https://kubernetes.io))
 
-   The following is an example of a Deployment, that we are using in this tutorial
+Kubernetes Service is Service is an abstraction that defines a logical set of Pods and a policy by which to access them (sometimes this pattern is called a micro-service). The set of Pods targeted by a Service is usually determined by a selector. ([Kubernetes](https://kubernetes.io))
+
+The following is an example of a Deployment, that we are using in this tutorial
 
 
 ```yaml
