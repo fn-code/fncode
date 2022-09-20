@@ -1,6 +1,8 @@
 {
   "title": "Distribusi, Repository, dan Arsitektur pada linux",
   "color": "rgb(209, 213, 219)",
+  "author": "Khairudin Firdaus Nento",
+  "keywords": "Linux, Distribusi, Arsitektur, Repository",
   "content": "Kali ini saya akan membahas mengenai distribusi,repository,arsitektur pada linux. Pertama yang kita bahas yaitu repository",
   "background": "",
   "date": "May 3, 2019"

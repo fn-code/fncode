@@ -1,6 +1,8 @@
 {
   "title": "Configure And Setup Clion With ESP-IDF",
   "color": "rgb(249, 168, 212)",
+  "author": "Khairudin Firdaus Nento",
+  "keywords": "Clion, Jetbrains, ESP-IDF, esp, espidf, esp32",
   "content": "The following is an explanation of how to setup and configure Clion IDE with esp-idf",
   "background": "",
   "date": "Oct 11, 2019"
