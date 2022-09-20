@@ -11,14 +11,30 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/tailwind.css">
-    <link rel="stylesheet" href="../../assets/github-markdown.css">
+<!--    <link rel="stylesheet" href="../../assets/github-markdown.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.css">
 </head>
 <style>
     ul, ol {
         list-style: revert;
     }
+
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+
+    @media (max-width: 767px) {
+        .markdown-body {
+            padding: 15px;
+            font-size: 30px;
+        }
+    }
 </style>
-<body class="bg-gray-100">
+<body class="bg-white">
 
 <div class="bg-white">
     <div class="border py-3 px-6">
@@ -73,17 +89,17 @@
 
             <div class="py-8">
                 <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="xs:h-5 xs:w-5 sm:h-5 sm:w-5 h-4 w-4 mr-2 text-gray-600" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="xs:h-5 xs:w-5 sm:h-5 sm:w-5 lg:h-4 lg:w-4 mr-2 text-gray-600" fill="none"
                          viewBox="0 0 24 24"
                          stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round"
                               d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                     </svg>
-                    <p class="text-sm text-gray-700 xs:text-lg sm:text-lg"><i id="page-date"></i></p>
+                    <p class="text-sm text-gray-700 xs:text-lg sm:text-lg lg:text-sm"><i id="page-date"></i></p>
                 </div>
-                <div class="w-full font-semibold text-xl xs:text-3xl sm:text-3xl lg:text-xl" id="page-title" ></div>
+                <div class="w-full font-semibold text-xl xs:text-5xl sm:text-5xl lg:text-xl" id="page-title" ></div>
 
-                <div id="blog-content" class="markdown-body pb-32 py-6 text-gray-800 text-md space-y-4 xs:text-2xl sm:text-xl lg:text-base">
+                <div id="blog-content" class="markdown-body pb-32 py-6 text-gray-800 text-md space-y-4 xs:text-4xl sm:text-3xl lg:text-base">
                 </div>
             </div>
 
